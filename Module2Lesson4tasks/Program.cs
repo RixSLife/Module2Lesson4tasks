@@ -81,7 +81,7 @@ namespace Module2Lesson4tasks
             //Napisz program w którym poprosisz użytkownika o jego dane personalne tj. Imię, nazwisko, numer telefonu, adres email, wzrost, waga(np. 85, 7), itp
             //(postaraj się wymyślić jak najwięcej)
             //i spróbuj przekonwertować odpowiedź do odpowiedniego typu danych używając metody: typDanych.Parse(odpowiedźOdUżytkownika).
-            Console.WriteLine("Prosze podac Twoje dane personalne");
+            Console.WriteLine("\nProsze podac Twoje dane personalne");
             Console.WriteLine("Imie: ");
             string Imie = Console.ReadLine();
             Imie = Imie.ToUpper();
