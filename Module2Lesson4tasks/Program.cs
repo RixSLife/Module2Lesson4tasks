@@ -103,6 +103,7 @@ namespace Module2Lesson4tasks
             Console.WriteLine("Waga: (kg) ");
             double Weight = double.Parse(Console.ReadLine());
 
+            Console.WriteLine("\nWprowadziles dane: ");
             Console.WriteLine("Imie: " + Imie);
             Console.WriteLine("Nazwisko: " + Nazwisko);
             Console.WriteLine("Telefon: " + Phone);
