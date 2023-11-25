@@ -16,6 +16,7 @@ namespace Module2Lesson4tasks
             //e.PESEL
             //f.Numer pracownika(np. 2509324094)
             //Zadeklaruj zmienne odpowiednich typów, które mogą przetrzymywać te informacje
+            Console.WriteLine("Zadanie nr 1\n");
             string Name = "Robert";
             string Surname = "Kowalski";
             int Age = 42;
@@ -28,39 +29,31 @@ namespace Module2Lesson4tasks
             Console.WriteLine(Gender);
             Console.WriteLine(PESEL);
             Console.WriteLine(EmployeeId);
-            Console.WriteLine("");
 
             //Zadanie nr 2
             //Napisz program, w którym stworzysz 3 zmienne z jedną literą, a następnie wypiszesz je w odwrotnej kolejności niż zostały zadeklarowane.
-            Console.WriteLine("Zadanie nr 2");
+            Console.WriteLine("\nZadanie nr 2");
 
-            int x = 10;
-            int y = 20;
-            int z = 30;
+            string x = "A";
+            string y = "B";
+            string z = "C";
 
-            Console.WriteLine("");
-            Console.WriteLine($" {z} \r\n {y} \r\n {x}");
-            Console.WriteLine("");
+            Console.WriteLine($"\n{z}\n{y}\n{x}");
 
             //Zadanie nr 3
             //Napisz program, który na podstawie podanej szerokości i długości prostokąta wyliczy długość przekątnej.
             //(Aby, obliczyć kwadrat liczby użyj metody Math.Pow())
-            Console.WriteLine("");
-            Console.WriteLine("Zadanie nr 3");
+            Console.WriteLine("\nZadanie nr 3\n");
 
-            Console.WriteLine("Do obliczenia przekatnejbedziemy potrzebowac");
-            Console.WriteLine("dlugosci bokow prostokata.");
-            Console.WriteLine("");
+            Console.WriteLine("Do obliczenia przekatnej bedziemy potrzebowac dlugosci bokow prostokata.\n");
 
             Console.WriteLine("Podaj dlugosc boku A: ");
-            double a = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("");
+            double a = double.Parse(Console.ReadLine());
             Console.WriteLine("Podaj dlugosc boku B: ");
-            double b = Convert.ToDouble(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
 
             double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
-            Console.WriteLine("Dlugosc przekatnej wynosi: " + c);
-            Console.WriteLine("");
+            Console.WriteLine($"Dlugosc przekatnej wynosi: {c}");
 
             //Zadanie nr 4
             //Napisz program w którym stworzysz 2 zmienne liczbowe, oraz jedną tekstową, a następnie przypiszesz im następujące wartości:
@@ -68,8 +61,7 @@ namespace Module2Lesson4tasks
             //b.Szkoła Dotneta
             //c. 12,5
             //Pamiętaj o użyciu poprawnych typów danych.
-            Console.WriteLine("");
-            Console.WriteLine("Zadanie nr 4");
+            Console.WriteLine("\nZadanie nr 4\n");
             int d = 10;
             string e = "Szkola Dotneta";
             double f = 12.5;
@@ -81,40 +73,35 @@ namespace Module2Lesson4tasks
             //Napisz program w którym poprosisz użytkownika o jego dane personalne tj. Imię, nazwisko, numer telefonu, adres email, wzrost, waga(np. 85, 7), itp
             //(postaraj się wymyślić jak najwięcej)
             //i spróbuj przekonwertować odpowiedź do odpowiedniego typu danych używając metody: typDanych.Parse(odpowiedźOdUżytkownika).
-            Console.WriteLine("\nProsze podac Twoje dane personalne");
+            Console.WriteLine("\nZadanie nr 5\n");
+            Console.WriteLine("Prosze podac Twoje dane personalne");
             Console.WriteLine("Imie: ");
             string Imie = Console.ReadLine();
-            Imie = Imie.ToUpper();
 
             Console.WriteLine("Nazwisko: ");
             string Nazwisko = Console.ReadLine();
-            Nazwisko = Nazwisko.ToUpper();
 
             Console.WriteLine("Nr. telefonu: ");
             string Phone = Console.ReadLine();
 
             Console.WriteLine("Adres email: ");
             string Email = Console.ReadLine();
-            Email = Email.ToLower();
 
             Console.WriteLine("Wzrost: (cm) ");
-            double Height = double.Parse(Console.ReadLine());
+            int Height = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Waga: (kg) ");
             double Weight = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("\nWprowadziles dane: ");
-            Console.WriteLine("Imie: " + Imie);
-            Console.WriteLine("Nazwisko: " + Nazwisko);
-            Console.WriteLine("Telefon: " + Phone);
-            Console.WriteLine("Email: " + Email);
-            Console.WriteLine("Wzrost: " + Height + "cm");
-            Console.WriteLine("Waga: " + Weight + "kg");
-
+            Console.WriteLine("\nWprowadziles:");
+            Console.WriteLine($"Imie: {Imie}");
+            Console.WriteLine($"Nazwisko: {Nazwisko}");
+            Console.WriteLine($"Telefon: {Phone}");
+            Console.WriteLine($"Email: {Email}");
+            Console.WriteLine($"Wzrost: {Height}cm");
+            Console.WriteLine($"Waga: {Weight}kg");
 
             Console.ReadKey();
-
-
         }
     }
 }
